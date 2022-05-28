@@ -1,0 +1,25 @@
+.projects_background {
+    height: 100%;
+    background-color: rgb(0, 0, 0) !important;
+    padding: 0 20px 20px 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nossos_projetos {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container_projetos {
+    background-color: var(--black) !important;
+    width: 98%;
+    height: 500px;
+    border-radius: 20px;
+    border: 2px solid var(--projects-container-border);
+    box-shadow: 0 0 56px var(--projects-container-shadow);
+}

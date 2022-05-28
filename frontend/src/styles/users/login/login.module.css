@@ -1,0 +1,171 @@
+.container {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--black) !important;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.overlay {
+    margin: 3% 0 0 0;
+    
+    width: 45%;
+    background-color: var(--black) !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border-radius: 20px;
+}
+
+.overlay h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 56px;
+    margin: 8px 0 40px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 8%;
+    
+    gap: 25px;
+
+    font-size: 21px;
+}
+
+.inputBox {
+    width: 35vw;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: flex-start;
+}
+
+.input {
+    width: 80%;
+
+    border: none;
+
+    border-bottom: 2px solid rgba(255, 255, 255, 0);
+    
+    outline: none;
+    background: transparent;
+    margin: 0 2px 0 8px;
+
+    transition-duration: 200ms;
+    font-size: 18px;
+}
+
+.input:focus-within {
+    border-bottom: 2px solid var(--white);
+    transition: 200ms;
+}
+
+.input::placeholder {
+    color: #ffffff86;
+}
+
+.input:valid {
+    border-bottom: 2px solid var(--register-valid-input);
+    transition: 200ms;
+}
+
+.btnViewPassword {
+    border: none;
+}
+
+.oddOut {
+    text-decoration: line-through;
+}
+
+.buttonDiv {
+    padding: 0 60px 20px 0;
+}
+
+.btnRegister {
+    width: 180px;
+    height: 50px;
+    justify-self: center;
+    border: 2px solid var(--white);
+
+    font-size: 30px;
+
+    border-radius: 20px;
+
+    transition-duration: 300ms;
+}
+
+.btnRegister:hover {   
+    border: 2px solid var(--register-button-color);
+    box-shadow: 0 0 20px var(--register-button-shadow-color);
+    cursor: pointer;
+
+    transition: 100ms ease-in-out;
+}
+
+.formDiv {
+    display: flex;
+}
+
+.dependencesDiv {
+    padding: 10px 0 0 0;
+
+    font-size: 14px;
+}
+
+.dependencesDiv li {
+    list-style: inside;
+}
+
+.login {
+    transition-duration: 200ms;
+}
+
+.login:hover {
+    letter-spacing: 3px;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.275);
+    
+    transition: 200ms;
+}
+
+.doesNotContainDiv {
+    width: 46vh;
+    display: flex;
+    justify-content: flex-end;
+
+    font-size: 15px;
+    padding: 0 0 18px 0;
+}
+
+.doesNotContain {
+    position: relative;
+    transition-duration: 200ms;
+    color: rgb(236, 236, 236);
+}
+
+.doesNotContain:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--register-valid-input);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.doesNotContain:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.doesNotContain:hover {
+    transition: 200ms;
+
+    color: var(--white);
+}

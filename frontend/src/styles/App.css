@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+
+:root {
+    --black: #000;
+    --white: #fff;
+    --red: #cc1111;
+    
+    
+    
+    --menu-button-font-size: 22px;
+    --menu-button-hover-color: rgb(182, 9, 9);
+    
+    --background-black: rgb(0, 0, 0);
+    --background-black-card: rgb(0, 0, 0);
+    
+    --cards-border-red: #ff0101d9;
+    --cards-name-red: rgb(192, 9, 9);
+    --cards-name-hover-red: rgb(255, 0, 0);
+    --cards-shadow-red: rgb(255 23 23 / 24%);
+    --cards-text-shadow-red: rgba(255, 0, 0, 0.613);
+    
+    --home-red-color: rgb(187, 23, 23);
+    --home-red-shadow-color: rgba(255, 0, 0, 0.261);
+    
+    
+    
+    --line-red-color: rgba(197, 16, 16, 0.334);
+    
+    
+    --projects-container-border: rgba(200, 200, 200, 0.835);
+    --projects-container-shadow: #ffffff1f;
+    --projects-shadow-white: rgba(255, 255, 255, 0.24);
+    --projects-cep-shadow-white: rgba(255, 255, 255, 0.119);
+    --projects-background-blackgrey: rgba(19, 19, 19, 0.329);
+    --projects-inputborder-white: #e7e7e7b2;
+    --projects-inputborder-focus-white: #ffffffe5;
+    --projects-formcep-div-shadow: #ffffff28;
+    
+    
+    
+    --register-valid-input: rgba(34, 255, 0, 0.824);
+    --register-button-color: rgb(34, 255, 0);
+    --register-button-shadow-color: rgba(17, 255, 0, 0.166);
+} 
+
+home {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: rgb(255, 0, 217);
+    color: rgb(233, 233, 233);
+
+    font-family: 'Inter', sans-serif;
+
+    list-style-type: none; 
+    text-decoration: none;
+    background-color: transparent !important;
+    scroll-behavior: smooth;
+} 
+
+
+
+::-webkit-scrollbar {
+    width: 1.35em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(218, 218, 218);
+    
+    border-radius: 30px;
+    border: .4em solid rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(160, 20, 20);
+}
