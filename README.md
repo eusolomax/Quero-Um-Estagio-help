@@ -3,4 +3,6 @@
 ### http://queroumestagio.help
 ## Nós trabalhamos diversos dias neste portfólio para demonstrar o conhecimento que carregamos!
 
-Obs: o backend não está online em nenhum servidor, apenas a aplicação React.
+Observações:
+O backend não está online em nenhum servidor, apenas a aplicação React.
+Atualmente o site se adapta apenas ao Desktop, estamos trabalhando na responsividade Mobile.
