@@ -5,7 +5,6 @@
     height: 100%;
     background-color: var(--background-black) !important;
     padding: 30px 30px 0 30px;
-
 }
 
 .container_about_us {
@@ -87,8 +86,10 @@
 }
 
 .div_merecemos {
+    position: absolute;
     font-size: 25px;
     text-align: center;
+    width: 100%;
 }
 
 .h1_merecemos {
@@ -98,6 +99,88 @@
 
 .h1_merecemos:hover {
     letter-spacing: 1px;
+
+    transition: 200ms;
+}
+
+
+
+.temporario {
+    color: rgb(201, 27, 204);
+}
+
+
+
+
+
+
+
+
+
+
+
+.about_us_background {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    background-color: var(--background-black) !important;
+    padding: 30px 0 0 0;
+}
+
+.container_our_bio {
+    display: flex;
+    width: 95%;
+
+    border-bottom: 1px solid var(--line-red-color);
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-bottom: 3%;
+
+    /* border: 1px solid rgba(255, 0, 0, 0.404);
+    border-radius: 50px;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.196); */
+}
+
+.bioDiv {
+    margin: 10px 50px 0 50px;
+    padding: 10px 10px 20px 10px;
+
+}
+
+.bioDiv p {
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 200;
+
+    line-height: 30px;
+}
+
+.bioTitle {
+    padding-bottom: 25px;
+}
+
+
+.bioDiv h1 {
+    font-weight: 400;
+    
+    padding: 6px 0;
+    font-size: 3.5rem;
+    color: var(--white);
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.157);
+}
+
+.bioDiv span {
+    font-size: 35px;
+    font-weight: 200;
+
+    transition-duration: 200ms;
+}
+
+.bioDiv span:hover {
+    letter-spacing: 2px;
 
     transition: 200ms;
 }

@@ -19,6 +19,7 @@
     --cards-name-hover-red: rgb(255, 0, 0);
     --cards-shadow-red: rgb(255 23 23 / 24%);
     --cards-text-shadow-red: rgba(255, 0, 0, 0.613);
+    --aboutus-border-background: #ffffff8d;
     
     --home-red-color: rgb(187, 23, 23);
     --home-red-shadow-color: rgba(255, 0, 0, 0.261);
@@ -28,8 +29,8 @@
     --line-red-color: rgba(197, 16, 16, 0.334);
     
     
-    --projects-container-border: rgba(200, 200, 200, 0.835);
-    --projects-container-shadow: #ffffff1f;
+    --projects-container-border: rgb(200, 200, 200);
+    --projects-container-shadow: #ffffff13;
     --projects-shadow-white: rgba(255, 255, 255, 0.24);
     --projects-cep-shadow-white: rgba(255, 255, 255, 0.119);
     --projects-background-blackgrey: rgba(19, 19, 19, 0.329);

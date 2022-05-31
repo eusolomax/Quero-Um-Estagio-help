@@ -3,7 +3,7 @@
 
     width: 100%;
     height: auto;
-    padding: 80px 0;
+    padding: 20px 0 50px 0;
 }
 
 .containerDiv {
@@ -14,8 +14,10 @@
 
 .containerDiv h1 {
     padding-top: 20px;
+    padding-bottom: 8px;
+
     text-align: center;
-    font-size: 40px;
+    font-size: 45px;
     transition: 200ms ease-in-out;
 }
 
@@ -26,7 +28,17 @@
 
 .containerDiv p {
     padding-left: 10px;    
-    font-size: 40px;    
+    font-size: 42px;
+    color: rgb(230, 230, 230);
+
+    transition-duration: 200ms;   
+}
+
+.containerDiv p:hover {
+    letter-spacing: 2px;
+    color: var(--white);
+
+    transition: 200ms;
 }
 
 .githubRepoDiv {
@@ -40,25 +52,29 @@
     width: 100px;
     filter: invert(1);
 
-    animation: roda-roda 1000ms linear infinite;
+    animation: roda-roda 900ms linear infinite;
+
+    transition-duration: 800ms;
 }
 
 .githubIcon:hover {
-    animation: roda-rodakk 1000ms linear infinite;
+    animation: roda-rodakk 280ms linear infinite;
+
+    transition: 900ms;
 }
 
 @keyframes roda-roda {
     0% { transform: rotate(0deg); }
-    25% { transform: rotate(2deg); }
+    25% { transform: rotate(5deg); }
     50% { transform: rotate(0deg); }
-    75% { transform: rotate(-2deg); }
+    75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
 }
 
 @keyframes roda-rodakk {
     0% { transform: rotate(0deg); }
-    25% { transform: rotate(8deg); }
+    25% { transform: rotate(4deg); }
     50% { transform: rotate(0deg); }
-    75% { transform: rotate(-8deg); }
+    75% { transform: rotate(-4deg); }
     100% { transform: rotate(0deg); }
 }
