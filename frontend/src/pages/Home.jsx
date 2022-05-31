@@ -1,6 +1,8 @@
 import gif from '../public/images/mouse.gif'
 import cardvictor from '../public/images/cardphotos/victor.jpg'
 import cardbruno from '../public/images/cardphotos/bruno.jpg'
+import mapPhoto from '../public/projects/mapphoto.png'
+import { Link } from "react-router-dom"
 
 import styles from '../styles/home/q_u_e.module.css'
 import styles2 from '../styles/home/about_us.module.css'
@@ -28,7 +30,7 @@ export default function Home() {
                 </div>
 
                     <div className={styles2.div_merecemos}>
-                        <h1 className={styles2.h1_merecemos}>três coders, um sonho: ter renda fixa!</h1>
+                        <h1 className={styles2.h1_merecemos}>dois coders, um sonho: ter renda fixa!</h1>
                     </div>
             </div>
 
@@ -65,7 +67,18 @@ export default function Home() {
                     </div>
 
                     <div className={styles3.container_projetos}>
-                        
+                        <div className={styles3.div_cardProjeto}>
+                            <h1>Projeto MAP</h1>
+
+                            <Link to="/projects/map">
+                                <div className={styles3.div_projeto}>
+                                    <img src={mapPhoto} alt="" className={styles3.projects_img}/>
+                                    <div className={styles3.div_projeto_desc}>
+                                        Este projeto foi desenvolvido com a biblioteca React Leaflet, que é uma biblioteca de mapas. Nele é possível criar mapas, adicionar marcadores, etc.
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
                     </div>
             </div>
         </>
