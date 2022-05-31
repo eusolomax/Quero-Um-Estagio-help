@@ -1,8 +1,24 @@
+import { useState, useEffect } from "react"
+import axios from "axios"
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet"
 
-export default function Map({ data }) {
-    return(
-        <MapContainer center={[40.8054,-74.0241]} zoom={13} scrollWheelZoom={true} style={{ height: "100%", width: "100%" }}>
+import "../../styles/projects/map/map.css"
+
+export default function Map() {
+    const [data, setData] = useState([])
+
+    async function getData() {
+        await axios.get("http://localhost:8080/map")
+            .then(data => setData(data.data))
+            .catch(err => console.error(err))
+    }
+
+    useEffect(() => {
+        getData()
+     }, [])
+
+    return (
+        <MapContainer center={[40.8054,-74.0241]} zoom={13} scrollWheelZoom={true}>
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

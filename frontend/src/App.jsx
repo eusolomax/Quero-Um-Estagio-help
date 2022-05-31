@@ -8,6 +8,7 @@ import TemplateDefault from "./templates/Default"
 import Home from "./pages/Home"
 import Login from "./pages/user/Login"
 import Register from "./pages/user/Register"
+import Map from "./pages/projects/Map"
 
 import "./styles/App.css"
 
@@ -18,6 +19,7 @@ export default function App() {
           <Routes>
               <Route path="/user/login" element={<Login />} />
               <Route path="/user/register" element={<Register />} />
+              <Route path="/projects/map" element={<Map />} />
               <Route path="/" element={<Home />} />
           </Routes>
       </TemplateDefault>

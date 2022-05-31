@@ -1,12 +1,14 @@
 const router = require("express").Router()
 const Controller = require("../controllers/Controller")
 
-router.get("/:id?", Controller.get)
+//STATICS
+router.get("/map", Controller.getMap)
 router.post("/", Controller.post)
 router.put("/:id", Controller.put)
 router.delete("/:id", Controller.del)
 
-//MAP
-router.get("/", Controller.getMap)
+//DYNAMICS
+router.get("/:id?", Controller.get)
+
 
 module.exports = router
