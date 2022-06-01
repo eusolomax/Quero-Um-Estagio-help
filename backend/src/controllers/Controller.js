@@ -1,38 +1,30 @@
-const User = require("../models/User") 
-const Map = require("../models/Map") 
+const User = require("../models/User")
 
-async function get(req, res) {
-    res.send("FUNÇÃO GET_ALL");
+async function addNewUser(req, res) {
+    const { name, email, password } = req.body
+
+    await User.create({
+        name,
+        email,
+        password
+    })
+        .then(() => res.send("User created!"))
+        .catch(error => res.send(`ERROR: ${error}`))
 }
+async function getUser(req, res) {
+    const { name, email, password } = req.body
 
-async function getMap(req, res) {
-    const map = new Map()
-    
-    await map.getAllLocations()
-        .then(result => res.send(result))
-        .catch(err => res.send(`Failed to load locations - ERROR: ${err}`))
-}
+    const user = 
+        (await User.findAll({ where: {name, password} }))
+        ||
+        (await User.findAll({ where: {email, password} }))
+        ||
+        ""
 
-async function post(req, res) {
-    const data = req.body
-    let user = new User(data)
-    
-    user = await user.registerUser()
-        .then(() => res.send("User registered successfully!"))
-        .catch(err => res.send(`Failed to register user - ERROR: ${err}`))
-}
-
-async function put(req, res) {
-    res.send("FUNÇÃO PUT")
-}
-
-async function del(req, res) {
-    res.send("FUNÇÃO DELETE")
+    res.send(user)
 }
 
 module.exports = {
-    get, getMap,
-    post,
-    put,
-    del
+    addNewUser,
+    getUser,
 }

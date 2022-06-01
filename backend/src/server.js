@@ -10,10 +10,13 @@ const routes = require("./routes/index")
 app.use(express.json())
 
 //DEFINING ROUTES
-app.use("/", routes)
+app.use("/", routes);
 
 //SETTING DB
-db.pool
+(async () => {
+    const User = require("./models/User")
+    await db.sync()
+})()
 
 //SETTING CORS
 const allowedOrigins = [
