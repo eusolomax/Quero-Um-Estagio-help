@@ -1,14 +1,13 @@
 const router = require("express").Router()
-const Controller = require("../controllers/Controller")
+const ControllerUser = require("../controllers/User")
 
-//STATICS
-router.get("/map", Controller.getMap)
-router.post("/", Controller.post)
-router.put("/:id", Controller.put)
-router.delete("/:id", Controller.del)
+        //STATICS
+//USER
+router.get("/user", ControllerUser.getUser)
+router.post("/user", ControllerUser.addNewUser)
 
-//DYNAMICS
-router.get("/:id?", Controller.get)
+//MAP
+//router.get("/map", Controller.getAllLocations)
+//router.post("/map", Controller.addNewLocation)
 
-
-module.exports = router
+module.exports = router 

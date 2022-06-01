@@ -1,13 +1,17 @@
 require("dotenv").config()
-const mysql = require("mysql2")
+const Sequelize = require("sequelize")
 
-const pool = mysql.createPool({
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    database: process.env.DB_NAME,
-    password: process.env.DB_PASSWORD
-})
+const sequelize = new Sequelize(
+    process.env.DB_NAME, 
+    process.env.DB_USER, 
+    process.env.DB_PASSWORD, 
+    {
+        dialect: "mysql",
+        host: process.env.DB_HOST,
+        port: 3306
+    }
+)
 
-if(pool) console.log(`DB connected. HOST: ${process.env.DB_HOST}. DATABASE: ${process.env.DB_NAME}`)
+if(sequelize) console.log(`DB connected. HOST: ${process.env.DB_HOST}. DATABASE: ${process.env.DB_NAME}`)
 
-module.exports = pool
+module.exports = sequelize

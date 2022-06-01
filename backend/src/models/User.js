@@ -1,30 +1,25 @@
+const Sequelize = require("sequelize")
 const db = require("../database/db")
 
-class User {
-    constructor(data) {
-        this.data = data
+const User = db.define("user", {
+    id: {
+        type: Sequelize.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
+        allowNull: false
+    },
+    name: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    email: {
+        type: Sequelize.STRING,
+        allowNull: false
+    },
+    password: {
+        type: Sequelize.STRING,
+        allowNull: false
     }
-
-    async registerUser() {
-        const d = new Date()
-
-        const sql = `
-            INSERT INTO users(
-                user,
-                email,
-                password,
-                register_date
-            ) 
-            VALUES(
-                '${this.data.user}',
-                '${this.data.email}',
-                '${this.data.password}',
-                '${d.getFullYear()}-${d.getMonth()+1}-${d.getDate()}'
-            )
-        `
-
-        return await db.execute(sql)
-    }
-}
+})
 
 module.exports = User
