@@ -53,7 +53,7 @@ export default function Home() {
                             Em colaboração com a equipe, desenvolveu a estética do site e pos em código toda suas funcionabilidades.
                         </p>
 
-                        <p className={aboutus.temporario}> * COLOCAR REDES SOCIAIS AQUI * </p>
+                        {/* <p className={aboutus.temporario}> * COLOCAR REDES SOCIAIS AQUI * </p> */}
                     </div>
 
 
@@ -65,7 +65,7 @@ export default function Home() {
                             Desenvolveu grande parte das funcionabilidades do site e os projetos em equipe, como: login, cadastro, etc.
                         </p>
 
-                        <p className={aboutus.temporario}> * COLOCAR REDES SOCIAIS AQUI * </p>
+                        {/* <p className={aboutus.temporario}> * COLOCAR REDES SOCIAIS AQUI * </p> */}
                     </div>
 
                 </div>
