@@ -1,13 +1,13 @@
 const router = require("express").Router()
-const Controller = require("../controllers/Controller")
+const ControllerUser = require("../controllers/User")
 
         //STATICS
 //USER
-router.post("/user", Controller.addNewUser)
-router.get("/user", Controller.getUser)
+router.get("/user", ControllerUser.getUser)
+router.post("/user", ControllerUser.addNewUser)
 
 //MAP
-router.get("/map", Controller.getAllLocations)
-router.post("/map", Controller.addNewLocation)
+//router.get("/map", Controller.getAllLocations)
+//router.post("/map", Controller.addNewLocation)
 
 module.exports = router 
