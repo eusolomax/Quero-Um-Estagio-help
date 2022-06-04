@@ -14,19 +14,19 @@ export default function Navbar() {
                     </Link>
 
                     <li className={styles.li}>
-                        <Link to="#" className={styles.texto}>About</Link>
+                        <Link to="#" className={styles.texto}>Home</Link>
                     </li>
 
                     <li className={styles.li}>
-                        <Link to="#" className={styles.texto}>Services</Link>
+                        <Link to="#" className={styles.texto}>Sobre nós</Link>
                     </li>
 
                     <li className={styles.li}>
-                        <Link to="#" className={styles.texto}>Projects</Link>
+                        <Link to="#" className={styles.texto}>Projetos</Link>
                     </li>
 
                     <li className={styles.li}>
-                        <Link to="#" className={styles.texto}>Contact Us</Link>
+                        <Link to="#" className={styles.texto}>Contato</Link>
                     </li>
 
                     <div className={styles.content_loginregister}>
