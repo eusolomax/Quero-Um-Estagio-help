@@ -120,10 +120,10 @@ export default function Home() {
                                 <div className={projects.div_projeto}>
                                     <img src={mapPhoto} alt="" className={projects.projects_img}/>
                                     
-                                        <div className={projects.div_projeto_desc}>
-                                    <h1>PROJETO MAP</h1>
-                                            Este projeto foi desenvolvido com a biblioteca React Leaflet, que é uma biblioteca de mapas. Nele é possível criar mapas, adicionar marcadores, etc.
-                                        </div>
+                                    <div className={projects.div_projeto_desc}>
+                                        <h1>PROJETO MAP</h1>
+                                        <span>Este projeto foi desenvolvido com a biblioteca React Leaflet, que é uma biblioteca de mapas. Nele é possível criar mapas, adicionar marcadores, etc.</span>
+                                    </div>
                                 </div>
                             </Link>
                         </div>

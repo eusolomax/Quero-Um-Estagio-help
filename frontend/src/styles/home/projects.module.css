@@ -68,6 +68,13 @@
     flex-direction: column;
     justify-content: space-around;
 }
+.div_projeto_desc h1 {
+    font-weight: 500;
+}
+
+.div_projeto_desc span {
+    font-weight: 200;
+}
 
 .projects_img {
     width: auto;
