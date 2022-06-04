@@ -136,7 +136,7 @@
 
     border-bottom: 1px solid var(--line-red-color);
     text-align: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     padding-bottom: 3%;
 
