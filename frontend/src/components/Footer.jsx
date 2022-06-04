@@ -3,7 +3,7 @@ import CookieConsent from "react-cookie-consent"
 export default function Footer() {
     return (
         <div>
-            <CookieConsent
+            {/* <CookieConsent
                 location="bottom"
                 buttonText="Sure man!!"
                 cookieName="myAwesomeCookieName2"
@@ -12,7 +12,7 @@ export default function Footer() {
                 expires={150}>
                 This website uses cookies to enhance the user experience.{" "}
                 <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>
-            </CookieConsent>
+            </CookieConsent> */}
         </div>
     )
 }

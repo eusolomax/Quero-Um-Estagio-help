@@ -36,9 +36,9 @@ export default function Home() {
                 </div>
 
             </div>
-                    <div className={aboutus.div_merecemos}>
-                        <h1 className={aboutus.h1_merecemos}>dois coders, um sonho: ter renda fixa!</h1>
-                    </div>
+                <div className={aboutus.div_merecemos}>
+                    <h1 className={aboutus.h1_merecemos}>dois coders, um sonho: ter renda fixa!</h1>
+                </div>
 
 
 
@@ -79,7 +79,7 @@ export default function Home() {
                                 <span>Solomax</span>
                             </div>
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, dicta. Corrupti assumenda quos dolore doloribus! Quo neque laborum libero natus ad saepe rerum officiis Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quod neque voluptate et. Voluptatem architecto necessitatibus ipsam repudiandae <br></br> voluptates asperio ssumenda omnis distinctio? dignissimos, modi accusamus unde laboriosam nemo?</p>
+                            <p>Desde mais novo sempre tive muito contato com a programação, seja para poder editar alguns arquivos ao meu favor ou mera curiosidade de entender como tudo aquilo funcionava internamente. Em 2018, pude experienciar um amplo conhecimento em desenvolvimento de jogos com tutoriais extensos, e assim vindo a despertar meu interesse em programação, onde em 2022 pude estar dedicando todo meu tempo, para assim então estar fazendo o mesmo de minha carreira.</p>
                         </div>
 
 

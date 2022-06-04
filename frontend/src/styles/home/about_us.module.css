@@ -93,8 +93,10 @@
 }
 
 .h1_merecemos {
+    font-size: 50px;
     letter-spacing: 0px;
     transition-duration: 200ms;
+    font-weight: 100;
 }
 
 .h1_merecemos:hover {
