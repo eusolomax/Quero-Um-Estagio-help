@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
 :root {
     --black: #000;
@@ -11,7 +11,7 @@
     --menu-button-font-size: 22px;
     --menu-button-hover-color: rgb(182, 9, 9);
     
-    --background-black: rgb(0, 0, 0);
+    --background-black: rgb(0, 0, 0); 
     --background-black-card: rgb(0, 0, 0);
     
     --cards-border-red: #ff0101d9;

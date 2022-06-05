@@ -122,7 +122,7 @@ export default function Home() {
                                     
                                     <div className={projects.div_projeto_desc}>
                                         <h1>PROJETO MAP</h1>
-                                        <span>Este projeto foi desenvolvido com a biblioteca React Leaflet, que é uma biblioteca de mapas. Nele é possível criar mapas, adicionar marcadores, etc.</span>
+                                        <span>Um mapa global criado com React Leaflet onde é possível registrar localizações com base nas coordenadas. Dica: para descobrir as coordenadas de um lugar, abra o endereço no Google Maps e clique com o botão direito. O primeiro número é a latitude e o segundo a longitude.</span>
                                     </div>
                                 </div>
                             </Link>

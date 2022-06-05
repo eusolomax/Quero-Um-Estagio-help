@@ -7,6 +7,9 @@ import imgreact from '../public/images/reacticon.png'
 
 import styles from '../styles/navbar/navbar.module.css'
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCircleUser } from "@fortawesome/free-solid-svg-icons"
+
 export default function Navbar() {
     const auth = useAuth()
     const navigate = useNavigate()
@@ -42,11 +45,11 @@ export default function Navbar() {
                     {
                         auth.user
                             ? (
-                                <div>
-                                    <img src="" alt="ProfPic"></img>
-                                    <h2>{auth.user}</h2>
-                                    <button onClick={handleLogout}>Logout</button>
-                                </div>
+                                <div className={styles.profile}>
+                                    <FontAwesomeIcon icon={faCircleUser} className={styles.profile_icon} />
+                                    <p>{auth.user}</p>
+                                    <button className={styles.button} onClick={handleLogout}>Logout</button>
+                                </div> 
                             )
                             : (
                                 <div className={styles.content_loginregister}>

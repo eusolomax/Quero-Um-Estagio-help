@@ -65,6 +65,24 @@
     display: flex;
 }
 
+.profile {
+    display: flex;
+    width: 240px;
+}
+
+.profile_icon {
+    width: 25px;
+    padding-top: 5px;
+}
+
+.profile p {
+    font-size: 24px;
+    margin: auto 30px auto 10px;
+    text-overflow: ellipsis;
+    overflow: hidden; 
+}
+
+
 
 
 

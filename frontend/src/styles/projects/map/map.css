@@ -25,9 +25,18 @@
 
 .content {
     width: 90%;
-    height: 70%;
+    height: 80%;
 }
 
 .leaftlet-container {
     border-radius: 70px;
 }
+
+.marker {
+    color: rgb(94, 0, 0);
+}
+
+.popup .leaflet-popup-content-wrapper {
+    background-color: black;
+    color: white;
+} 
