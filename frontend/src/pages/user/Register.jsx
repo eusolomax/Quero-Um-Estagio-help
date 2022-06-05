@@ -1,5 +1,7 @@
-import axios from "axios"
 import { useState, useEffect } from "react"
+import { useNavigate } from "react-router-dom"
+
+import { useAuth } from "../../auth/Auth"
 
 import styles from "../../styles/users/register/register.module.css"
 
@@ -68,6 +70,14 @@ export default function Register() {
     }
 
     //SUBMITING
+    const auth = useAuth()
+    const navigate = useNavigate()
+
+    function handleLogin(user){
+        auth.login(user)
+        navigate("/", { replace: true })
+    }
+
     function handleSubmit(e) {
         e.preventDefault()
 
@@ -87,12 +97,15 @@ export default function Register() {
             }
         }
 
-        delete values.password2
-        const res = axios.post("http://localhost:8080", values)
-            .then(res => res)
-            .catch(res => console.log(res))
+        // IF WITH BACKEND SERVER ON
+        // delete values.password2
+        // const res = axios.post("http://localhost:8080", values)
+        //     .then(res => res)
+        //     .catch(res => console.log(res))
         
-        res ? console.log("LOGADO") : console.log("RECUSADO")
+        const res = values
+        
+        handleLogin(res.name)
     }
 
     //TRIGGER PASSWORD VIEWING

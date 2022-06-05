@@ -2,7 +2,7 @@ import CookieConsent from "react-cookie-consent"
 
 export default function Footer() {
     return (
-        <div>
+        <div id="#footer">
             {/* <CookieConsent
                 location="bottom"
                 buttonText="Sure man!!"

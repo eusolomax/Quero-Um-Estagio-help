@@ -4,6 +4,8 @@ import {
   Route
 } from "react-router-dom"
 
+import { AuthProvider } from "./auth/Auth"
+import { RequireAuth } from "./auth/RequireAuth"
 import TemplateDefault from "./templates/Default"
 import Home from "./pages/Home"
 import Login from "./pages/user/Login"
@@ -14,15 +16,17 @@ import "./styles/App.css"
 
 export default function App() {
   return (
-    <Router>
+    <AuthProvider>
+      <Router>
         <TemplateDefault>
           <Routes>
-              <Route path="/user/login" element={<Login />} />
-              <Route path="/user/register" element={<Register />} />
-              <Route path="/projects/map" element={<Map />} />
-              <Route path="/" element={<Home />} />
+            <Route path="/user/login" element={<Login />} />
+            <Route path="/user/register" element={<Register />} />
+            <Route path="/projects/map" element={<RequireAuth> <Map /> </RequireAuth>} />
+            <Route path="/" element={<Home />} />
           </Routes>
-      </TemplateDefault>
-    </Router>
+        </TemplateDefault>
+      </Router>
+    </AuthProvider>
   )
 }

@@ -1,6 +1,7 @@
-import axios from "axios"
 import { useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+
+import { useAuth } from "../../auth/Auth"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faEye, faEyeSlash } from "@fortawesome/free-regular-svg-icons"
@@ -27,14 +28,26 @@ export default function Login() {
     }
 
     //SUBMITING
+    const auth = useAuth()
+    const navigate = useNavigate()
+
+    function handleLogin(user){
+        auth.login(user)
+        navigate("/", { replace: true })
+    }
+ 
     async function handleSubmit(e) {
         e.preventDefault()
 
-        const res = await axios.get("http://localhost:8080", values)
-            .then(res => res.data)
-            .catch(err => console.error(err))
+        // IF WITH BACKEND SERVER ON
+        // const res = await axios.get("http://localhost:8080", values)
+        //     .then(res => res.data)
+        //     .catch(err => console.error(err))
+
+        const res = values
         
-        res ? console.log("LOGADO") : console.log("RECUSADO")
+        // res ? handleLogin(res.name) : alert("RECUSADO")
+        res ? handleLogin(res.user) : alert("RECUSADO")
     }
 
     return (

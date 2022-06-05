@@ -42,7 +42,7 @@ export default function Home() {
 
 
 
-            <div className={aboutus.about_us_background}>
+            <div className={aboutus.about_us_background} id="aboutus">
                 <div className={aboutus.container_about_us}>
 
                     <div className={aboutus.div_equip}>
@@ -89,7 +89,7 @@ export default function Home() {
                                 <span>GheistLycis</span>
                             </div>
 
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quod neque voluptate et. Voluptatem architecto necessitatibus ipsam repudiandae, voluptates asperiores fugiat, dolore cum est velit ex aperiam assumenda omnis distinctio? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus quod neque voluptate et. Voluptatem architecto necessitatibus <br></br> ipsam repudiandae, voluptates asperiores fugiat, dolore cum est velit ex aperiam assumenda omnis distinctio?</p>
+                            <p>Com uma constante paixão por aprender coisas novas, sempre tendeu para a ciência e tecnologia. Com 19 anos ingressou na UFABC em BC&T e com 20 anos passou a se dedicar ao estudo da programação voltada à web em NodeJS e ReactJS. Apesar disso, não planeja se limitar apenas ao desenvolvimento web, mas no futuro se aprofundar em outras áreas dentro da programação como Games, Machine Learning e Big Data.</p>
                         </div>
                     </div>
                 </div>
@@ -101,14 +101,14 @@ export default function Home() {
                     <h1>Alias, este site esta no Github, corre pra olhar o codigo!</h1>
 
                         <a href="https://github.com/eusolomax/Quero-Um-Estagio-help" target="_blank">
-                            <div className={github.githubRepoDiv}><img className={github.githubIcon} src={githubIcon}/><p>Repositório</p></div>
+                            <div className={github.githubRepoDiv}><img className={github.githubIcon} src={githubIcon}/><p>Repositorio</p></div>
                         </a>
                 </div>
             </div>
 
 
 
-            <div className={projects.projects_background}>
+            <div className={projects.projects_background} id="projects">
                     <div className={projects.nossos_projetos}>
                         <h1 className={projects.h1_nossos_projetos}>Da uma olhadinha nos projetos desenvolvidos 🔥</h1>
                     </div>
