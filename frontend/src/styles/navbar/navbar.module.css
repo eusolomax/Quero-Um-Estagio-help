@@ -64,3 +64,46 @@
 .texto_loginregister {
     display: flex;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 875px){
+    .ul {
+        display: none;
+    }
+}
