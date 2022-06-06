@@ -12,11 +12,8 @@ app.use(express.json())
 //DEFINING ROUTES
 app.use("/", routes);
 
-//SETTING DB
-(async () => {
-    const User = require("./models/User")
-    await db.sync()
-})()
+//INITIALIZING DB
+db.initDB()
 
 //SETTING CORS
 const allowedOrigins = [

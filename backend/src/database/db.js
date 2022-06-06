@@ -14,4 +14,13 @@ const sequelize = new Sequelize(
 
 if(sequelize) console.log(`DB connected. HOST: ${process.env.DB_HOST}. DATABASE: ${process.env.DB_NAME}`)
 
-module.exports = sequelize
+async function initDB() {
+    const User = require("./models/User")
+
+    await sequelize.sync()
+}
+
+module.exports = {
+    sequelize, 
+    initDB
+}
