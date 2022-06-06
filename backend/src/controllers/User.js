@@ -3,14 +3,14 @@ const User = require("../models/User")
 
 async function addNewUser(req, res) {
     const { name, email, password } = req.body
+    let user
 
     try {
-        const user = await User.findOne({ where: {[Op.or]: [{name}, {email}]} })
-        
+        user = await User.findOne({ where: {[Op.or]: [{name}, {email}]} })
+
         if(user.name === name) res.send("Name already taken!")
         if(user.email === email) res.send("Email already registered!")
-    }
-    catch {
+    
         await User.create({
             name,
             email,
@@ -19,7 +19,11 @@ async function addNewUser(req, res) {
             .then(() => res.send("User created!"))
             .catch(error => res.send(`ERROR: ${error}`))
     }
+    catch(e) {
+        res.send(`CATCH ERROR: ${e}`)
+    }
 }
+
 async function getUser(req, res) {
     const { login, password } = req.body
 
