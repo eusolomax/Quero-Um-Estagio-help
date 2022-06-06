@@ -8,15 +8,15 @@ async function addNewUser(req, res) {
     try {
         user = await User.findOne({ where: {[Op.or]: [{name}, {email}]} })
 
-        if(user.name === name) res.send("Name already taken!")
-        if(user.email === email) res.send("Email already registered!")
+        if(user.name === name) res.send("Este nome já foi registrado!")
+        if(user.email === email) res.send("Este email já foi registrado!")
     
         await User.create({
             name,
             email,
             password
         })
-            .then(() => res.send("User created!"))
+            .then(() => res.send("Usuário criado!"))
             .catch(error => res.send(`ERROR: ${error}`))
     }
     catch(e) {
