@@ -37,6 +37,7 @@ export default function Map() {
         getData()
     }, [])
     
+    
     return (
         <div className="background">
             <h1>Projeto MAP</h1>

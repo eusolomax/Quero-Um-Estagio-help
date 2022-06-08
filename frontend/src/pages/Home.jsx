@@ -7,6 +7,7 @@ import cardvictor from '../public/images/cardphotos/victor.jpg'
 import cardbruno from '../public/images/cardphotos/bruno.jpg'
 import githubIcon from '../public/images/githubIcon.png'
 import mapPhoto from '../public/projects/mapphoto.png'
+import cepPhoto from '../public/projects/cepphoto.jpg'
 
 //Importe de CSS
 import q_u_e from '../styles/home/q_u_e.module.css'
@@ -113,6 +114,7 @@ export default function Home() {
                         <h1 className={projects.h1_nossos_projetos}>Da uma olhadinha nos projetos desenvolvidos 🔥</h1>
                     </div>
 
+                    {/* PROJETO MAP */}
                     <div className={projects.container_projetos}>
                         <div className={projects.div_cardProjeto}>
 
@@ -122,7 +124,26 @@ export default function Home() {
                                     
                                     <div className={projects.div_projeto_desc}>
                                         <h1>PROJETO MAP</h1>
-                                        <span>Um mapa global criado com React Leaflet onde é possível registrar localizações com base nas coordenadas. Dica: para descobrir as coordenadas de um lugar, abra o endereço no Google Maps e clique com o botão direito. O primeiro número é a latitude e o segundo a longitude.</span>
+                                        <span>Um mapa global criado com React Leaflet onde é possível registrar localizações com base nas coordenadas.</span>
+                                        {/* Dica: para descobrir as coordenadas de um lugar, abra o endereço no Google Maps e clique com o botão direito. O primeiro número é a latitude e o segundo a longitude. */}
+                                    
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* PROJETO CEP */}
+                    <div className={projects.container_projetos_last}>
+                        <div className={projects.div_cardProjeto}>
+
+                            <Link to="/projects/formcep">
+                                <div className={projects.div_projeto}>
+                                    <img src={cepPhoto} alt="" className={projects.projects_img}/>
+                                    
+                                    <div className={projects.div_projeto_desc}>
+                                        <h1>PROJETO CEP</h1>
+                                        <span>Uma breve amostra de que sabemos criar formulários para sites e assim poder coletar as informações de usuários cadastrados.</span>
                                     </div>
                                 </div>
                             </Link>

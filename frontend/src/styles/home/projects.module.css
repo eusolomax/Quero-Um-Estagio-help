@@ -1,13 +1,7 @@
 .projects_background {
-    height: 127vh;
+    height: auto;
     background-color: rgb(0, 0, 0) !important;
     padding: 0 20px 20px 20px;
-
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
 .nossos_projetos {
@@ -20,11 +14,24 @@
     justify-content: center;
     align-items: flex-start;
 
-    padding: 50px 0;
+    padding: 0 100px 130px 100px;
 
 
     background-color: rgb(0, 0, 0) !important;
-    width: 98%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.container_projetos_last {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 100px 0;
+    margin-bottom: 100px;
+
+
+    background-color: rgb(0, 0, 0) !important;
     height: 70%;
     border-radius: 20px;
 }

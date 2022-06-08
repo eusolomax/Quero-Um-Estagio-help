@@ -45,7 +45,6 @@ export default function FormCEP() {
     }
         
     return (
-        <TemplateDefault>
             <main className={styles.container}>
 
                 <div className={styles.formDiv}>
@@ -108,8 +107,6 @@ export default function FormCEP() {
                             </div>
                     </form>
                 </div>
-
             </main>
-        </TemplateDefault>
     )
 }
