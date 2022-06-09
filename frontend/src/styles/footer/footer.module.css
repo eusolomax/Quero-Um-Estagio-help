@@ -28,3 +28,31 @@ p {
     width: 50px;
     filter: invert();
 }
+
+
+
+
+
+@media (max-width: 511px){
+    .row p {
+        font-size: 20px;
+        font-weight: 200;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 432px){
+    .row p {
+        font-size: 15px;
+        font-weight: 200;
+        padding-top: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .row p {
+        font-size: 12px;
+        font-weight: 200;
+        padding-top: 23px;
+    }
+}

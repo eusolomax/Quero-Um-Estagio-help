@@ -247,4 +247,19 @@
     .h1_merecemos {
         font-size: 27px;
     }
+
+    .bioDiv {
+        margin: 10px 20px 0 20px;
+        padding: 10px 10px 20px 10px;
+    }
+}
+
+@media (max-width: 360px) {
+    .h1_merecemos {
+        font-size: 27px;
+    }
+
+    .bioDiv p {
+        line-height: 30px;
+    }
 }

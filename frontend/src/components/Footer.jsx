@@ -7,7 +7,7 @@ import styles from "../styles/footer/footer.module.css"
 
 export default function Footer() {
     return (
-        <div className={styles.footer} id="#footer">
+        <div className={styles.footer} id="footer">
             <div className={styles.content}>
                 <div className={styles.row}>
                     <hr />
@@ -18,7 +18,7 @@ export default function Footer() {
                 </div>
                 <div className={styles.row}>
                     <hr />
-                    <a href="https://www.linkedin.com/in/victor<hr />capitelli/" target="blank"><img src={linkedinIcon} className={styles.social_icon} /></a>
+                    <a href="https://www.linkedin.com/in/victor-capitelli/" target="blank"><img src={linkedinIcon} className={styles.social_icon} /></a>
                     <p>Victor Capitelli</p>
                     <a href="https://github.com/eusolomax/" target="blank"><img src={githubIcon} className={styles.social_icon} /></a>
                     <hr />
