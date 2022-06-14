@@ -1,7 +1,7 @@
-# Quero Um Estágio! (EM DESENVOLVIMENTO)
+# Quero Um Estágio!
 ## "Quero um Estágio" é um projeto de dois desenvolvedores que estão à procura de uma oportunidade. Dá uma olhadinha:
 ### http://queroumestagio.help
-## Nós trabalhamos diversos dias neste portfólio para demonstrar o conhecimento que carregamos!
+## Nós trabalhamos por meses neste portfólio para demonstrar o conhecimento que carregamos!
 
 Observações: <br>
 • O backend não está online em nenhum servidor, apenas a aplicação React. <br>
