@@ -1,6 +1,6 @@
 # Quero Um Estágio!
 ## "Quero um Estágio" é um projeto de dois desenvolvedores que estão à procura de uma oportunidade. Dá uma olhadinha:
-### http://queroumestagio.help
+### https://queroumestagio.help
 ## Nós trabalhamos por meses neste portfólio para demonstrar o conhecimento que carregamos!
 
 Observações: <br>
